@@ -25,6 +25,27 @@ html {
     scroll-behavior: smooth;
 }
 
+section {
+    padding: 3rem 9%;
+}
+
+.btn {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: .8rem 3rem;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+    background: #666;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.btn:hover {
+    background: var(--main-color);
+}
+
+
 html::-webkit-scrollbar {
     width: 1rem;
 }
@@ -85,6 +106,41 @@ body {
 }
 
 /* Header Style EndsHere */
+
+/* Home Section style Start here  */
+.home .content {
+    text-align: center;
+    padding-top: 6rem;
+    margin: 2rem auto;
+    max-width: 70rem;
+}
+
+.home .content h3 {
+    color: #fff;
+    font-size: 4rem;
+    text-transform: uppercase;
+}
+
+.home .content h3 span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
+.home .home-slider .swiper-slide {
+    overflow: hidden;
+    border-radius: .5rem;
+    height: 50rem;
+    width: 35rem;
+}
+
+.home .home-slider .swiper-slide img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+
+/* Home Section style Ends here  */
 
 
 
