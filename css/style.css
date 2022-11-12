@@ -229,6 +229,8 @@ body {
 }
 
 /* About Section Style end */
+
+
 /* Gallery Section Style Start */
 .gallery .box-container {
     display: grid;
@@ -297,8 +299,6 @@ body {
 }
 
 /* Gallery Section Style End */
-
-
 
 /* Extra added */
 .panels {
@@ -450,6 +450,151 @@ body {
 
 /* price section end */
 
+/* Review Section start */
+.reivew .box {
+    border-radius: .5rem;
+    background: #333;
+    padding: 2rem;
+    position: relative;
+}
+
+.reivew .box .fa-quote-right {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    color: var(--main-color);
+    font-size: 5rem;
+}
+
+.reivew .box .user {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 1rem;
+}
+
+.reivew .box .user img {
+    height: 7rem;
+    width: 7rem;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.reivew .box .user h3 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.reivew .box .user span {
+    font-size: 1.5rem;
+    color: #eee;
+}
+
+.reivew .box p {
+    line-height: 2;
+    color: #eee;
+    padding: .5rem 0;
+    font-size: 1.6rem;
+}
+
+/* Review Section end */
+
+/* contact section start */
+.contact form {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+}
+
+.contact form .inputBox {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contact form .inputBox input,
+.contact form textarea {
+    width: 100%;
+    background: #333;
+    border-radius: .5rem;
+    padding: 1rem;
+    margin: .7rem 0;
+    font-size: 1.5rem;
+    color: #fff;
+    text-transform: none;
+}
+
+.contact form .inputBox input::placeholder,
+.contact form textarea::placeholder {
+    color: #eee;
+    text-transform: capitalize;
+}
+
+.contact form .inputBox input:focus,
+.contact form textarea:focus {
+    background: #444;
+}
+
+.contact form .inputBox input {
+    width: 49%;
+}
+
+.contact form textarea {
+    resize: none;
+}
+
+/* contact section end */
+
+
+/* Footer Start */
+.footer {
+    background: #111;
+}
+
+.footer .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
+
+.footer .box-container .box h3 {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+    color: #fff;
+}
+
+.footer .box-container .box a {
+    display: block;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+    color: #eee;
+}
+
+.footer .box-container .box a i {
+    padding-right: .5rem;
+    color: var(--main-color);
+}
+
+.footer .box-container .box a:hover i {
+    padding-right: 1.5rem;
+    color: #fff;
+}
+
+.footer .credit {
+    text-align: center;
+    border-top: .1rem solid #222;
+    color: #fff;
+    padding: 2rem;
+    padding-top: 2.5rem;
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+
+.footer .credit span {
+    color: var(--main-color);
+}
+
+/* Footer end */
 
 
 /* media queries  */
