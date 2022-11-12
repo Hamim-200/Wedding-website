@@ -331,24 +331,23 @@ body {
 }
 
 .panel1 {
-    /* background-image: url(https://source.unsplash.com/gYl-UtwNg_I/1500x1500); */
-    background-image: url("../images/slide_img-1.jpg");
+    background-image: url("../images/about-image-10.jpg");
 }
 
 .panel2 {
-    background-image: url(https://source.unsplash.com/rFKUFzjPYiQ/1500x1500);
+    background-image: url("../images/about-image-7.jpg");
 }
 
 .panel3 {
-    background-image: url(https://images.unsplash.com/photo-1465188162913-8fb5709d6d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&cs=tinysrgb&w=1500&h=1500&fit=crop&s=967e8a713a4e395260793fc8c802901d);
+    background-image: url("../images/about-image-8.jpg");
 }
 
 .panel4 {
-    background-image: url(https://source.unsplash.com/ITjiVXcwVng/1500x1500);
+    background-image: url("../images/about-image-9.jpg");
 }
 
 .panel5 {
-    background-image: url(https://source.unsplash.com/3MNzGlQM7qs/1500x1500);
+    background-image: url("../images/about-image-11.jpg");
 }
 
 /* Flex Items */
@@ -382,7 +381,7 @@ body {
     text-transform: uppercase;
     font-family: 'Amatic SC', cursive;
     text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
-    font-size: 2em;
+    font-size: 1em;
 }
 
 .panel p:nth-child(2) {
@@ -402,7 +401,54 @@ body {
 
 /* Extra added */
 
+/* price section start */
+.price .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    gap: 1.5rem;
+}
 
+.price .box-container .box {
+    padding: 2rem 0;
+    background: #333;
+    border-radius: .5rem;
+    text-align: center;
+}
+
+.price .box-container .box:hover {
+    transform: scale(1.03);
+}
+
+.price .box-container .box .title {
+    background: var(--main-color);
+    color: #fff;
+    padding: 1.5rem 0;
+    font-size: 2rem;
+}
+
+.price .box-container .box .amount {
+    color: #fff;
+    padding-top: 2rem;
+    font-size: 4rem;
+}
+
+.price .box-container .box ul {
+    list-style-type: none;
+    padding: 1rem 0;
+}
+
+.price .box-container .box ul li {
+    font-size: 1.5rem;
+    color: #eee;
+    padding: 1rem 0;
+}
+
+.price .box-container .box ul li i {
+    color: var(--main-color);
+    padding-right: .5rem;
+}
+
+/* price section end */
 
 
 
