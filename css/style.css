@@ -3,7 +3,6 @@
 
 :root {
     --main-color: #3867d6;
-    /* --main-color: #D4BC6A; */
 }
 
 * {
@@ -315,8 +314,6 @@ body {
     color: white;
     text-align: center;
     align-items: center;
-    /* Safari transitionend event.propertyName === flex */
-    /* Chrome + FF transitionend event.propertyName === flex-grow */
     transition:
         font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
         flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11),
@@ -596,76 +593,59 @@ body {
 
 /* Footer end */
 
-
-/* media queries  */
-
-@media (max-width:991px) {
-
-    html {
-        font-size: 55%;
-    }
-
-    .header {
-        padding: 1.5rem 2rem;
-    }
-
-    section {
-        padding: 2rem;
-    }
-
+/* Theme */
+.theme-toggler {
+    position: fixed;
+    top: 10rem;
+    right: -20rem;
+    background: #333;
+    z-index: 1000;
+    width: 20rem;
+    text-align: center;
 }
 
-@media (max-width:768px) {
-
-    #menu-bars {
-        display: initial;
-    }
-
-    .header .navbar {
-        position: absolute;
-        top: 100%;
-        left: 0;
-        right: 0;
-        border-top: .1rem solid #222;
-        background: #333;
-        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
-    }
-
-    .header .navbar.active {
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-    }
-
-    .fa-times {
-        transform: rotate(180deg);
-    }
-
-    .header .navbar a {
-        display: flex;
-        background: #222;
-        border-radius: .5rem;
-        padding: 1.3rem;
-        margin: 1.3rem;
-        font-size: 2rem;
-    }
-
-    .home .content h3 {
-        font-size: 4rem;
-    }
-
+.theme-toggler.active {
+    right: 0;
 }
 
-@media (max-width:450px) {
+.theme-toggler h3 {
+    color: #fff;
+    padding: 1rem 0;
+    font-size: 2rem;
+}
 
-    html {
-        font-size: 50%;
+.theme-toggler .buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.theme-toggler .buttons .theme-btn {
+    height: 5rem;
+    width: 5rem;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.theme-toggler .toggle-btn {
+    position: absolute;
+    top: 0;
+    left: -5.9rem;
+    padding: 1.3rem 1.5rem;
+    background: #333;
+    cursor: pointer;
+}
+
+.theme-toggler .toggle-btn i {
+    color: #fff;
+    font-size: 3rem;
+    animation: spin 4s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(360deg);
     }
-
-    .home .home-slider .swiper-slide {
-        width: 27rem;
-    }
-
-    .contact form .inputBox input {
-        width: 100%;
-    }
-
 }
